@@ -2,21 +2,20 @@ import Image from "next/image";
 
 import { blogPosts } from "@/lib/data";
 import BlogPostCard from "@/components/BlogPostCard";
+import Badge from "@/components/Badge";
 
 export default function Home() {
   const featuredPost = blogPosts[0];
   const otherPosts = blogPosts.slice(1);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-50">
+    <div className="min-h-screen bg-[light] text-[veryDarkGreen]">
       {/* Hero Section */}
       <section className="relative py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-travel-ocean via-travel-forest to-travel-sunset bg-clip-text text-transparent mb-6">
-              Ander
-            </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6">My Travel</h1>
+            <p className="text-xl text-[green] max-w-2xl mx-auto">
               Join me on incredible journeys around the world. Discover hidden
               gems, local cultures, and unforgettable experiences.
             </p>
@@ -50,12 +49,13 @@ export default function Home() {
                   <p className="text-gray-600 mb-6">{featuredPost.excerpt}</p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {featuredPost.tags.slice(0, 3).map((tag) => (
-                      <span
+                      <Badge
                         key={tag}
-                        className="px-3 py-1 bg-travel-forest/10 text-travel-forest rounded-full text-sm"
+                        variant="secondary"
+                        className="px-3 py-1 bg-[darkGreen] text-[light] rounded-full text-sm"
                       >
                         {tag}
-                      </span>
+                      </Badge>
                     ))}
                   </div>
                   <a
