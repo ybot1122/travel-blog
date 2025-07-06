@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { blogPosts } from "@/lib/data";
+import BlogPostCard from "@/components/BlogPostCard";
 
 export default function Home() {
   const featuredPost = blogPosts[0];
@@ -75,7 +76,7 @@ export default function Home() {
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {otherPosts.map((post) => (
-                <div key={post.id}>{post.title}</div>
+                <BlogPostCard key={post.id} post={post} />
               ))}
             </div>
           </div>
