@@ -2,16 +2,20 @@ import React from "react";
 
 export default function ({
   children,
-  className,
   variant,
   onClick,
 }: {
   children: React.ReactNode;
-  className: string;
-  variant: "outline" | "secondary";
+  variant: "outline" | "secondary" | "primary";
   onClick?: () => void;
 }) {
   const Tag = onClick ? "button" : "div";
+
+  let className = "";
+
+  if (variant === "primary") {
+    className = "px-3 py-1 bg-[darkGreen] text-[gold] rounded-full text-sm";
+  }
 
   return (
     <Tag {...(onClick ? { onClick } : {})} className={className}>

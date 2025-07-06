@@ -22,7 +22,7 @@ const config: Config = {
       colors: {
         light: "#F1F8E8",
         lightBlue: "#80ACD1",
-        veryDarkGreen: "#202E0E",
+        foobar: "#202E0E",
         darkGreen: "#283A12",
         gold: "#7B783D",
         green: "#304616",

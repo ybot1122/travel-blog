@@ -3,7 +3,7 @@ import type { BlogPost, Author } from "./types";
 export const author: Author = {
   name: "Daisy",
   bio: "Professional travel blogger and photographer with over 10 years of experience exploring the world. I've visited 50+ countries and love sharing hidden gems, local cultures, and unforgettable adventures. When I'm not traveling, you can find me planning my next expedition or editing photos from my latest journey.",
-  avatar: "/placeholder.svg?height=200&width=200",
+  avatar: "/placeholder.png?height=200&width=200",
   socialLinks: {
     instagram: "https://instagram.com/daisy",
     twitter: "https://twitter.com/daisy",
@@ -25,7 +25,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Secret Beaches Worth the Hike</h2>
       <p>While most tourists flock to the popular beaches, I found some incredible hidden spots that offer the same crystal-clear waters without the crowds.</p>
       
-      <img src="/placeholder.svg?height=400&width=600" alt="Hidden beach in Santorini" style="width: 100%; margin: 20px 0; border-radius: 8px;" />
+      <img src="/placeholder.png?height=400&width=600" alt="Hidden beach in Santorini" style="width: 100%; margin: 20px 0; border-radius: 8px;" />
       
       <h2>Local Tavernas</h2>
       <p>The best meals I had weren't at the cliff-side restaurants with the views, but at small family-run tavernas in the island's interior villages.</p>
@@ -34,7 +34,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>For more travel tips, check out my <a href="/about" style="color: #0ea5e9; text-decoration: underline;">about page</a> where I share more about my travel philosophy.</p>
     `,
-    coverImage: "/placeholder.svg?height=400&width=800",
+    coverImage: "/placeholder.png?height=400&width=800",
     tags: ["Greece", "Islands", "Hidden Gems", "Mediterranean"],
     location: "Santorini, Greece",
     publishedAt: "2024-01-15",
@@ -58,11 +58,11 @@ export const blogPosts: BlogPost[] = [
         <li>Taiyaki (fish-shaped pastries) filled with red bean paste</li>
       </ul>
       
-      <img src="/placeholder.svg?height=400&width=600" alt="Tokyo street food market" style="width: 100%; margin: 20px 0; border-radius: 8px;" />
+      <img src="/placeholder.png?height=400&width=600" alt="Tokyo street food market" style="width: 100%; margin: 20px 0; border-radius: 8px;" />
       
       <p>The key to experiencing authentic Tokyo street food is to follow the locals and don't be afraid to point at what looks good!</p>
     `,
-    coverImage: "/placeholder.svg?height=400&width=800",
+    coverImage: "/placeholder.png?height=400&width=800",
     tags: ["Japan", "Food", "Street Food", "Tokyo", "Culture"],
     location: "Tokyo, Japan",
     publishedAt: "2024-01-10",
@@ -79,14 +79,14 @@ export const blogPosts: BlogPost[] = [
       <h2>The Route</h2>
       <p>My 3-week itinerary took me through:</p>
       
-      <img src="/placeholder.svg?height=400&width=600" alt="Patagonia landscape" style="width: 100%; margin: 20px 0; border-radius: 8px;" />
+      <img src="/placeholder.png?height=400&width=600" alt="Patagonia landscape" style="width: 100%; margin: 20px 0; border-radius: 8px;" />
       
       <h2>Essential Gear</h2>
       <p>Packing for Patagonia requires careful consideration of the unpredictable weather. Here's what I couldn't live without:</p>
       
       <p>The weather in Patagonia can change from sunny to stormy in minutes, so being prepared is crucial for a safe and enjoyable trip.</p>
     `,
-    coverImage: "/placeholder.svg?height=400&width=800",
+    coverImage: "/placeholder.png?height=400&width=800",
     tags: [
       "Argentina",
       "Chile",

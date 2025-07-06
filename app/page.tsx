@@ -49,11 +49,7 @@ export default function Home() {
                   <p className="text-gray-600 mb-6">{featuredPost.excerpt}</p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {featuredPost.tags.slice(0, 3).map((tag) => (
-                      <Badge
-                        key={tag}
-                        variant="secondary"
-                        className="px-3 py-1 bg-[darkGreen] text-[light] rounded-full text-sm"
-                      >
+                      <Badge key={tag} variant="primary">
                         {tag}
                       </Badge>
                     ))}

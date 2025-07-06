@@ -31,7 +31,7 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute top-4 left-4">
-          <Badge variant="secondary" className="bg-white/90 text-gray-800">
+          <Badge variant="primary">
             <MapPin className="w-3 h-3 mr-1" />
             {post.location}
           </Badge>
@@ -58,17 +58,14 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
           {post.tags.slice(0, 3).map((tag) => (
             <Badge
               key={tag}
-              variant="outline"
-              className="text-travel-forest border-travel-forest cursor-pointer hover:bg-travel-forest hover:text-white transition-colors"
+              variant="primary"
               onClick={() => handleTagClick(tag)}
             >
               {tag}
             </Badge>
           ))}
           {post.tags.length > 3 && (
-            <Badge variant="outline" className="text-gray-500">
-              +{post.tags.length - 3} more
-            </Badge>
+            <Badge variant="primary">+{post.tags.length - 3} more</Badge>
           )}
         </div>
       </CardContent>
