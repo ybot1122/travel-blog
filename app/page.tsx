@@ -27,26 +27,34 @@ export default function Home() {
               />
             </div>
             <div className="p-8">
-              <h1 className="text-2xl font-bold text-gray-900 mb-4 text-center">
-                {featuredPost.title}
+              <h1 className="text-4xl font-bold text-gray-900 mb-4 text-center">
+                <Link href={`/posts/${featuredPost.slug}`}>
+                  {featuredPost.title}
+                </Link>
               </h1>
-              <div className="text-center text-sm text-gray-500 mb-4">
+              <div className="text-center text-xl text-gray-500 mb-4">
                 {new Date(featuredPost.publishedAt).toLocaleDateString()}
               </div>
-              <p className="text-gray-600 mb-6">{featuredPost.excerpt}</p>
+              <p className="text-gray-600 mb-6">
+                {featuredPost.excerpt}
+                <Link
+                  href={`/posts/${featuredPost.slug}`}
+                  className="inline-flex items-center underline pl-2"
+                >
+                  Read More
+                </Link>
+              </p>
               <div className="flex flex-wrap gap-2">
                 {featuredPost.tags.slice(0, 3).map((tag) => (
-                  <Badge key={tag} variant="primary">
+                  <Badge
+                    key={tag}
+                    variant="primary"
+                    href={`/search?tag=${encodeURIComponent(tag)}`}
+                  >
                     {tag}
                   </Badge>
                 ))}
               </div>
-              <Link
-                href={`/posts/${featuredPost.slug}`}
-                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-travel-ocean to-travel-forest text-white rounded-lg hover:shadow-lg transition-all duration-300"
-              >
-                Read More
-              </Link>
             </div>
           </div>
         </div>

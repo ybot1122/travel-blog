@@ -14,32 +14,6 @@ export const author: Author = {
 
 export const blogPosts: BlogPost[] = [
   {
-    id: "1",
-    title: "Hidden Gems of Santorini: Beyond the Instagram Spots",
-    slug: "hidden-gems-santorini",
-    excerpt:
-      "Discover the authentic side of Santorini away from the crowds. From secret beaches to local tavernas, here's your guide to the real Greece.",
-    content: `
-      <p>Santorini is undoubtedly one of the most photographed destinations in the world, but beyond the famous blue domes and sunset views lies a treasure trove of authentic experiences waiting to be discovered.</p>
-      
-      <h2>Secret Beaches Worth the Hike</h2>
-      <p>While most tourists flock to the popular beaches, I found some incredible hidden spots that offer the same crystal-clear waters without the crowds.</p>
-      
-      <img src="/placeholder.png?height=400&width=600" alt="Hidden beach in Santorini" style="width: 100%; margin: 20px 0; border-radius: 8px;" />
-      
-      <h2>Local Tavernas</h2>
-      <p>The best meals I had weren't at the cliff-side restaurants with the views, but at small family-run tavernas in the island's interior villages.</p>
-      
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="margin: 20px 0; border-radius: 8px;"></iframe>
-      
-      <p>For more travel tips, check out my <a href="/about" style="color: #0ea5e9; text-decoration: underline;">about page</a> where I share more about my travel philosophy.</p>
-    `,
-    coverImage: "/placeholder.png?height=400&width=800",
-    tags: ["Greece", "Islands", "Hidden Gems", "Mediterranean"],
-    location: "Santorini, Greece",
-    publishedAt: "2024-01-15",
-  },
-  {
     id: "2",
     title: "Tokyo Street Food Adventure: A Culinary Journey",
     slug: "tokyo-street-food-adventure",
@@ -62,10 +36,36 @@ export const blogPosts: BlogPost[] = [
       
       <p>The key to experiencing authentic Tokyo street food is to follow the locals and don't be afraid to point at what looks good!</p>
     `,
-    coverImage: "/placeholder.png?height=400&width=800",
+    coverImage: "/tokyo.png?height=400&width=800",
     tags: ["Japan", "Food", "Street Food", "Tokyo", "Culture"],
     location: "Tokyo, Japan",
     publishedAt: "2024-01-10",
+  },
+  {
+    id: "1",
+    title: "Hidden Gems of Santorini: Beyond the Instagram Spots",
+    slug: "hidden-gems-santorini",
+    excerpt:
+      "Discover the authentic side of Santorini away from the crowds. From secret beaches to local tavernas, here's your guide to the real Greece.",
+    content: `
+      <p>Santorini is undoubtedly one of the most photographed destinations in the world, but beyond the famous blue domes and sunset views lies a treasure trove of authentic experiences waiting to be discovered.</p>
+      
+      <h2>Secret Beaches Worth the Hike</h2>
+      <p>While most tourists flock to the popular beaches, I found some incredible hidden spots that offer the same crystal-clear waters without the crowds.</p>
+      
+      <img src="/placeholder.png?height=400&width=600" alt="Hidden beach in Santorini" style="width: 100%; margin: 20px 0; border-radius: 8px;" />
+      
+      <h2>Local Tavernas</h2>
+      <p>The best meals I had weren't at the cliff-side restaurants with the views, but at small family-run tavernas in the island's interior villages.</p>
+      
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="margin: 20px 0; border-radius: 8px;"></iframe>
+      
+      <p>For more travel tips, check out my <a href="/about" style="color: #0ea5e9; text-decoration: underline;">about page</a> where I share more about my travel philosophy.</p>
+    `,
+    coverImage: "/santorini.png?height=400&width=800",
+    tags: ["Greece", "Islands", "Hidden Gems", "Mediterranean"],
+    location: "Santorini, Greece",
+    publishedAt: "2024-01-15",
   },
   {
     id: "3",
