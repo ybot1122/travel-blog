@@ -14,6 +14,56 @@ export const author: Author = {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "4",
+    title: "Costa Rica: Pura Vida and Wildlife Wonders",
+    slug: "costa-rica-pura-vida-wildlife",
+    excerpt:
+      "Experience the magic of Costa Rica's incredible biodiversity, from sloths in Manuel Antonio to volcanic hot springs in Arenal. Pura Vida awaits!",
+    content: `
+      <p>Costa Rica truly lives up to its name - "Rich Coast." This small Central American country packs an incredible punch when it comes to biodiversity, adventure, and that famous "Pura Vida" lifestyle that will capture your heart.</p>
+      
+      <h2>Manuel Antonio: Where Jungle Meets Beach</h2>
+      <p>Manuel Antonio National Park is a perfect introduction to Costa Rica's wildlife. Within minutes of arriving, I spotted three-toed sloths hanging lazily in the trees, colorful poison dart frogs, and troops of white-faced capuchin monkeys playing on the beach.</p>
+      
+      <img src="/placeholder.svg?height=400&width=600" alt="Sloth in Manuel Antonio" style="width: 100%; margin: 20px 0; border-radius: 8px;" />
+      
+      <h2>Arenal Volcano: Fire and Water</h2>
+      <p>The perfectly cone-shaped Arenal Volcano dominates the landscape, and while it's currently dormant, the area is still geothermally active. Soaking in natural hot springs while surrounded by rainforest is pure magic.</p>
+      
+      <h2>Monteverde Cloud Forest: A Mystical Experience</h2>
+      <p>Walking through the cloud forest feels like entering another world. The mist-covered trees are home to over 400 bird species, including the elusive quetzal. The canopy zip-line tours here are absolutely thrilling!</p>
+      
+      <img src="/placeholder.svg?height=400&width=600" alt="Monteverde cloud forest" style="width: 100%; margin: 20px 0; border-radius: 8px;" />
+      
+      <h2>Wildlife Encounters</h2>
+      <p>Costa Rica is home to 5% of the world's biodiversity in just 0.03% of the planet's surface. Every day brought new animal encounters:</p>
+      
+      <ul>
+        <li>Scarlet macaws flying overhead in Corcovado</li>
+        <li>Sea turtles nesting on the beaches of Tortuguero</li>
+        <li>Howler monkeys providing the jungle's morning alarm clock</li>
+        <li>Colorful toucans and over 900 bird species</li>
+      </ul>
+      
+      <h2>The Pura Vida Philosophy</h2>
+      <p>More than just a greeting, "Pura Vida" (pure life) embodies the Costa Rican approach to life - appreciating simple pleasures, living in the moment, and maintaining a positive outlook. It's infectious and something I've carried with me long after leaving.</p>
+      
+      <p>Costa Rica isn't just a destination; it's a reminder of what's truly important in life. The country's commitment to conservation and sustainable tourism makes it a model for the world.</p>
+    `,
+    coverImage: "/placeholder.png?height=400&width=800",
+    tags: [
+      "Costa Rica",
+      "Wildlife",
+      "Nature",
+      "Adventure",
+      "Rainforest",
+      "Pura Vida",
+    ],
+    location: "Costa Rica",
+    publishedAt: "2024-01-20",
+    video: "/costa_rica.MOV",
+  },
+  {
     id: "2",
     title: "Tokyo Street Food Adventure: A Culinary Journey",
     slug: "tokyo-street-food-adventure",

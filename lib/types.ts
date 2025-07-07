@@ -8,6 +8,7 @@ export interface BlogPost {
   tags: string[];
   location: string;
   publishedAt: string;
+  video?: string;
 }
 
 export interface Author {
