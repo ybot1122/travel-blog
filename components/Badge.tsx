@@ -1,25 +1,35 @@
+import Link from "next/link";
 import React from "react";
 
 export default function ({
   children,
   variant,
-  onClick,
+  href,
 }: {
   children: React.ReactNode;
   variant: "outline" | "secondary" | "primary";
-  onClick?: () => void;
+  href?: string;
 }) {
-  const Tag = onClick ? "button" : "div";
-
   let className = "";
 
   if (variant === "primary") {
     className = "px-3 py-1 bg-[darkGreen] text-[gold] rounded-full text-sm";
+  } else if (variant === "outline") {
+    className = "px-3 py-1 border-1 border-[green] rounded-full text-sm";
+  } else {
+    className =
+      "px-3 py-1 border-1 border-[green] rounded-full text-sm bg-[background]/70";
   }
 
-  return (
-    <Tag {...(onClick ? { onClick } : {})} className={className}>
+  if (href) {
+    className += " cursor-pointer hover:bg-[green] transition-bg duration-300";
+  }
+
+  return href ? (
+    <Link href={href} className={className}>
       {children}
-    </Tag>
+    </Link>
+  ) : (
+    <div className={className}>{children}</div>
   );
 }

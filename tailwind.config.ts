@@ -20,7 +20,7 @@ const config: Config = {
     },
     extend: {
       colors: {
-        light: "#F1F8E8",
+        background: "#F1F8E8",
         lightBlue: "#80ACD1",
         foobar: "#202E0E",
         darkGreen: "#283A12",

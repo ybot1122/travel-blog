@@ -21,7 +21,7 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
   };
 
   return (
-    <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300 group border-1 border-[lightBlue]">
+    <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300 group rounded-2xl shadow-2xl ">
       <div className="relative overflow-hidden">
         <Image
           src={post.coverImage || "/placeholder.svg"}
@@ -31,8 +31,8 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute top-4 left-4">
-          <Badge variant="primary">
-            <MapPin className="w-3 h-3 mr-1" />
+          <Badge variant="secondary">
+            <MapPin className="w-3 h-3 mr-1 inline-block" />
             {post.location}
           </Badge>
         </div>
@@ -59,13 +59,13 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
             <Badge
               key={tag}
               variant="primary"
-              onClick={() => handleTagClick(tag)}
+              href={`/search?tag=${encodeURIComponent(tag)}`}
             >
               {tag}
             </Badge>
           ))}
           {post.tags.length > 3 && (
-            <Badge variant="primary">+{post.tags.length - 3} more</Badge>
+            <Badge variant="outline">+{post.tags.length - 3} more</Badge>
           )}
         </div>
       </CardContent>
