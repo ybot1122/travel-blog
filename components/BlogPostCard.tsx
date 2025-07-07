@@ -21,7 +21,7 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
   };
 
   return (
-    <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300 group">
+    <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300 group border-1 border-[lightBlue]">
       <div className="relative overflow-hidden">
         <Image
           src={post.coverImage || "/placeholder.svg"}
