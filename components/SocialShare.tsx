@@ -7,6 +7,21 @@ interface SocialShareProps {
   url: string;
 }
 
+const Button = ({
+  children,
+  onClick,
+}: {
+  children: React.ReactNode;
+  onClick: () => void;
+}) => (
+  <button
+    onClick={onClick}
+    className="border-1 rounded border-gray-300 p-2 hover:bg-[gold] transition-colors duration-200 cursor-pointer"
+  >
+    {children}
+  </button>
+);
+
 export default function SocialShare({ title, url }: SocialShareProps) {
   const shareUrl =
     typeof window !== "undefined" ? window.location.origin + url : url;
@@ -58,18 +73,18 @@ export default function SocialShare({ title, url }: SocialShareProps) {
   return (
     <div className="flex items-center space-x-2">
       <span className="text-sm font-medium text-gray-700">Share:</span>
-      <button onClick={shareToFacebook}>
-        <Facebook className="w-4 h-4 cursor-pointer hover:scale-125 transition duration-200" />
-      </button>
-      <button onClick={shareToTwitter}>
-        <Twitter className="w-4 h-4 cursor-pointer  hover:scale-125 transition duration-200" />
-      </button>
-      <button onClick={shareByEmail}>
-        <Mail className="w-4 h-4 cursor-pointer  hover:scale-125 transition duration-200" />
-      </button>
-      <button onClick={copyLink}>
-        <LinkIcon className="w-4 h-4 cursor-pointer  hover:scale-125 transition duration-200" />
-      </button>
+      <Button onClick={shareToFacebook}>
+        <Facebook className="w-4 h-4" />
+      </Button>
+      <Button onClick={shareToTwitter}>
+        <Twitter className="w-4 h-4" />
+      </Button>
+      <Button onClick={shareByEmail}>
+        <Mail className="w-4 h-4" />
+      </Button>
+      <Button onClick={copyLink}>
+        <LinkIcon className="w-4 h-4" />
+      </Button>
     </div>
   );
 }
