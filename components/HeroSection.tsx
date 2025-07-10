@@ -7,9 +7,9 @@ export default function ({ featuredPost }: { featuredPost: BlogPost }) {
   return (
     <section className="px-4">
       {/* Featured Post */}
-      <div className="mb-16">
+      <div className="mb-16 max-w-2xl mx-auto">
         <div className="bg-white rounded-2xl shadow-2xl overflow-hidden mx-auto">
-          <div className="aspect-[4/3] w-full" style={{ maxHeight: "24rem" }}>
+          <div className="aspect-[4/3] w-full">
             {featuredPost.video ? (
               <video
                 src={featuredPost.video}
@@ -17,7 +17,6 @@ export default function ({ featuredPost }: { featuredPost: BlogPost }) {
                 autoPlay
                 controls
                 muted
-                style={{ maxHeight: "24rem" }}
               />
             ) : (
               <Image
@@ -32,7 +31,10 @@ export default function ({ featuredPost }: { featuredPost: BlogPost }) {
           </div>
           <div className="p-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4 text-center">
-              <Link href={`/posts/${featuredPost.slug}`}>
+              <Link
+                href={`/posts/${featuredPost.slug}`}
+                className="hover:text-gray-600"
+              >
                 {featuredPost.title}
               </Link>
             </h1>

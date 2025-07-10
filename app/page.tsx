@@ -1,9 +1,5 @@
-import Image from "next/image";
-
 import { blogPosts } from "@/lib/data";
 import BlogPostCard from "@/components/BlogPostCard";
-import Badge from "@/components/Badge";
-import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
