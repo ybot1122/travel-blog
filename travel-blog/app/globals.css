@@ -24,3 +24,52 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+#post-content h1 {
+  @apply text-4xl font-bold mt-8 mb-4 leading-tight;
+}
+
+#post-content h2 {
+  @apply text-2xl font-semibold mt-6 mb-4 leading-snug;
+}
+
+#post-content h3 {
+  @apply text-xl font-semibold mt-5 mb-3 leading-relaxed;
+}
+
+#post-content p {
+  @apply mb-5 leading-7;
+}
+
+#post-content a {
+  @apply text-blue-600 underline transition-colors duration-200;
+}
+
+#post-content a:hover {
+  @apply text-blue-800;
+}
+
+#post-content ul,
+#post-content ol {
+  @apply ml-6 mb-5 pl-5;
+}
+
+#post-content li {
+  @apply mb-2 leading-6 list-disc;
+}
+
+#post-content blockquote {
+  @apply border-l-4 border-gray-200 pl-4 text-gray-500 my-6 italic bg-gray-50;
+}
+
+#post-content img {
+  @apply block max-w-2xl mx-auto h-auto my-6 rounded-lg;
+}
+
+#post-content code {
+  @apply bg-gray-100 text-amber-600 px-2 py-0.5 rounded font-mono text-[0.95em];
+}
+
+#post-content pre {
+  @apply bg-zinc-900 text-zinc-100 p-4 rounded-lg overflow-x-auto my-6 font-mono text-[0.95em];
+}
