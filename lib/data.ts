@@ -25,7 +25,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Manuel Antonio: Where Jungle Meets Beach</h2>
       <p>Manuel Antonio National Park is a perfect introduction to Costa Rica's wildlife. Within minutes of arriving, I spotted three-toed sloths hanging lazily in the trees, colorful poison dart frogs, and troops of white-faced capuchin monkeys playing on the beach.</p>
       
-      <img src="/placeholder.svg?height=400&width=600" alt="Sloth in Manuel Antonio" style="width: 100%; margin: 20px 0; border-radius: 8px;" />
+      <img src="/placeholder.png?height=400&width=600" alt="Sloth in Manuel Antonio" />
       
       <h2>Arenal Volcano: Fire and Water</h2>
       <p>The perfectly cone-shaped Arenal Volcano dominates the landscape, and while it's currently dormant, the area is still geothermally active. Soaking in natural hot springs while surrounded by rainforest is pure magic.</p>
@@ -33,7 +33,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Monteverde Cloud Forest: A Mystical Experience</h2>
       <p>Walking through the cloud forest feels like entering another world. The mist-covered trees are home to over 400 bird species, including the elusive quetzal. The canopy zip-line tours here are absolutely thrilling!</p>
       
-      <img src="/placeholder.svg?height=400&width=600" alt="Monteverde cloud forest" style="width: 100%; margin: 20px 0; border-radius: 8px;" />
+      <img src="/placeholder.png?height=400&width=600" alt="Monteverde cloud forest" />
       
       <h2>Wildlife Encounters</h2>
       <p>Costa Rica is home to 5% of the world's biodiversity in just 0.03% of the planet's surface. Every day brought new animal encounters:</p>
@@ -82,7 +82,7 @@ export const blogPosts: BlogPost[] = [
         <li>Taiyaki (fish-shaped pastries) filled with red bean paste</li>
       </ul>
       
-      <img src="/placeholder.png?height=400&width=600" alt="Tokyo street food market" style="width: 100%; margin: 20px 0; border-radius: 8px;" />
+      <img src="/placeholder.png?height=400&width=600" alt="Tokyo street food market"  />
       
       <p>The key to experiencing authentic Tokyo street food is to follow the locals and don't be afraid to point at what looks good!</p>
     `,
@@ -103,7 +103,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Secret Beaches Worth the Hike</h2>
       <p>While most tourists flock to the popular beaches, I found some incredible hidden spots that offer the same crystal-clear waters without the crowds.</p>
       
-      <img src="/placeholder.png?height=400&width=600" alt="Hidden beach in Santorini" style="width: 100%; margin: 20px 0; border-radius: 8px;" />
+      <img src="/placeholder.png?height=400&width=600" alt="Hidden beach in Santorini"  />
       
       <h2>Local Tavernas</h2>
       <p>The best meals I had weren't at the cliff-side restaurants with the views, but at small family-run tavernas in the island's interior villages.</p>
@@ -129,7 +129,7 @@ export const blogPosts: BlogPost[] = [
       <h2>The Route</h2>
       <p>My 3-week itinerary took me through:</p>
       
-      <img src="/placeholder.png?height=400&width=600" alt="Patagonia landscape" style="width: 100%; margin: 20px 0; border-radius: 8px;" />
+      <img src="/placeholder.png?height=400&width=600" alt="Patagonia landscape"  />
       
       <h2>Essential Gear</h2>
       <p>Packing for Patagonia requires careful consideration of the unpredictable weather. Here's what I couldn't live without:</p>

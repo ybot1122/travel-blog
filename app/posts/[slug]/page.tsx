@@ -78,19 +78,22 @@ export default async function PostPage({ params }: PostPageProps) {
               muted
             />
           ) : (
-            <Image
-              src={post.coverImage || "/placeholder.svg"}
-              alt={post.title}
-              width={1200}
-              height={600}
-              className="w-full h-64 md:h-96 object-cover rounded-xl shadow-lg"
-            />
+            <div className="relative w-full h-full">
+              <Image
+                src={post.coverImage || "/placeholder.svg"}
+                alt={post.title}
+                fill
+                className="object-cover rounded-2xl"
+                sizes="(max-width: 768px) 100vw, 800px"
+                priority
+              />
+            </div>
           )}
         </div>
 
         {/* Content */}
         <div
-          className="mb-8 prose prose-lg max-w-none prose-headings:text-gray-900 prose-a:text-travel-ocean prose-strong:text-gray-900"
+          id="post-content"
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
