@@ -1,4 +1,4 @@
-import type { BlogPost, Author } from "./types";
+import type { BlogPost, Author } from "./types.ts";
 
 export const author: Author = {
   name: "Daisy",
@@ -33,7 +33,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Monteverde Cloud Forest: A Mystical Experience</h2>
       <p>Walking through the cloud forest feels like entering another world. The mist-covered trees are home to over 400 bird species, including the elusive quetzal. The canopy zip-line tours here are absolutely thrilling!</p>
       
-      <img src="/placeholder.png?height=400&width=600" alt="Monteverde cloud forest" />
+      <img src="/static/placeholder.png?height=400&width=600" alt="Monteverde cloud forest" />
       
       <h2>Wildlife Encounters</h2>
       <p>Costa Rica is home to 5% of the world's biodiversity in just 0.03% of the planet's surface. Every day brought new animal encounters:</p>
@@ -50,7 +50,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>Costa Rica isn't just a destination; it's a reminder of what's truly important in life. The country's commitment to conservation and sustainable tourism makes it a model for the world.</p>
     `,
-    coverImage: "/placeholder.png?height=400&width=800",
+    coverImage: "/static/placeholder.png?height=400&width=800",
     tags: [
       "Costa Rica",
       "Wildlife",
@@ -61,7 +61,7 @@ export const blogPosts: BlogPost[] = [
     ],
     location: "Costa Rica",
     publishedAt: "2024-01-20",
-    video: "/costa_rica.MOV",
+    video: "/static/costa_rica.MOV",
   },
   {
     id: "2",
@@ -82,11 +82,11 @@ export const blogPosts: BlogPost[] = [
         <li>Taiyaki (fish-shaped pastries) filled with red bean paste</li>
       </ul>
       
-      <img src="/placeholder.png?height=400&width=600" alt="Tokyo street food market"  />
+      <img src="/static/placeholder.png?height=400&width=600" alt="Tokyo street food market"  />
       
       <p>The key to experiencing authentic Tokyo street food is to follow the locals and don't be afraid to point at what looks good!</p>
     `,
-    coverImage: "/tokyo.png?height=400&width=800",
+    coverImage: "/static/tokyo.png?height=400&width=800",
     tags: ["Japan", "Food", "Street Food", "Tokyo", "Culture"],
     location: "Tokyo, Japan",
     publishedAt: "2024-01-10",
@@ -103,7 +103,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Secret Beaches Worth the Hike</h2>
       <p>While most tourists flock to the popular beaches, I found some incredible hidden spots that offer the same crystal-clear waters without the crowds.</p>
       
-      <img src="/placeholder.png?height=400&width=600" alt="Hidden beach in Santorini"  />
+      <img src="/static/placeholder.png?height=400&width=600" alt="Hidden beach in Santorini"  />
       
       <h2>Local Tavernas</h2>
       <p>The best meals I had weren't at the cliff-side restaurants with the views, but at small family-run tavernas in the island's interior villages.</p>
@@ -112,7 +112,7 @@ export const blogPosts: BlogPost[] = [
       
       <p>For more travel tips, check out my <a href="/about" style="color: #0ea5e9; text-decoration: underline;">about page</a> where I share more about my travel philosophy.</p>
     `,
-    coverImage: "/santorini.png?height=400&width=800",
+    coverImage: "/static/santorini.png?height=400&width=800",
     tags: ["Greece", "Islands", "Hidden Gems", "Mediterranean"],
     location: "Santorini, Greece",
     publishedAt: "2024-01-15",
@@ -129,14 +129,14 @@ export const blogPosts: BlogPost[] = [
       <h2>The Route</h2>
       <p>My 3-week itinerary took me through:</p>
       
-      <img src="/placeholder.png?height=400&width=600" alt="Patagonia landscape"  />
+      <img src="static/placeholder.png?height=400&width=600" alt="Patagonia landscape"  />
       
       <h2>Essential Gear</h2>
       <p>Packing for Patagonia requires careful consideration of the unpredictable weather. Here's what I couldn't live without:</p>
       
       <p>The weather in Patagonia can change from sunny to stormy in minutes, so being prepared is crucial for a safe and enjoyable trip.</p>
     `,
-    coverImage: "/placeholder.png?height=400&width=800",
+    coverImage: "static/placeholder.png?height=400&width=800",
     tags: [
       "Argentina",
       "Chile",

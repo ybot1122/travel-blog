@@ -1,7 +1,7 @@
-import { BlogPost } from "@/lib/types";
-import Image from "next/image";
-import Link from "next/link";
-import Badge from "./Badge";
+import React from "react";
+
+import { BlogPost } from "../lib/types.ts";
+import Badge from "./Badge.tsx";
 
 export default function ({ featuredPost }: { featuredPost: BlogPost }) {
   return (
@@ -19,7 +19,7 @@ export default function ({ featuredPost }: { featuredPost: BlogPost }) {
                 muted
               />
             ) : (
-              <Image
+              <img
                 src={featuredPost.coverImage || "/placeholder.svg"}
                 alt={featuredPost.title}
                 width={800}
@@ -31,24 +31,24 @@ export default function ({ featuredPost }: { featuredPost: BlogPost }) {
           </div>
           <div className="p-8">
             <h1 className="text-4xl font-bold text-gray-900 mb-4 text-center">
-              <Link
+              <a
                 href={`/posts/${featuredPost.slug}`}
                 className="hover:text-gray-600"
               >
                 {featuredPost.title}
-              </Link>
+              </a>
             </h1>
             <div className="text-center text-xl text-gray-500 mb-4">
               {new Date(featuredPost.publishedAt).toLocaleDateString()}
             </div>
             <p className="text-gray-600 mb-6">
               {featuredPost.excerpt}
-              <Link
+              <a
                 href={`/posts/${featuredPost.slug}`}
                 className="inline-flex items-center underline pl-2"
               >
                 Read More
-              </Link>
+              </a>
             </p>
             <div className="flex flex-wrap gap-2">
               {featuredPost.tags.slice(0, 3).map((tag) => (

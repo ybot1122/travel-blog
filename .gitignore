@@ -19,6 +19,7 @@
 
 # production
 /build
+/src/static/style.css
 
 # misc
 .DS_Store
@@ -39,3 +40,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# binaries
+src/bin/tailwindcss-windows-x64.exe

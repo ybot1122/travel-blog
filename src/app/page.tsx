@@ -1,6 +1,8 @@
-import { blogPosts } from "@/lib/data";
-import BlogPostCard from "@/components/BlogPostCard";
-import HeroSection from "@/components/HeroSection";
+import React from "react";
+
+import { blogPosts } from "../lib/data.ts";
+import BlogPostCard from "../components/BlogPostCard.tsx";
+import HeroSection from "../components/HeroSection.tsx";
 
 export default function Home() {
   const featuredPost = blogPosts[0];

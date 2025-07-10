@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 export default function ({
@@ -26,9 +25,9 @@ export default function ({
   }
 
   return href ? (
-    <Link href={href} className={className}>
+    <a href={href} className={className}>
       {children}
-    </Link>
+    </a>
   ) : (
     <div className={className}>{children}</div>
   );
