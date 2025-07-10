@@ -6,8 +6,11 @@
     "start": "deno run --allow-net --allow-read server.tsx"
   },
   "imports": {
+    "autoprefixer": "npm:autoprefixer@^10.4.21",
+    "postcss": "npm:postcss@^8.5.6",
     "react": "https://esm.sh/react@19",
     "react-dom/client": "npm:react-dom@^19/client",
-    "react-dom/server": "npm:react-dom@^19/server"
+    "react-dom/server": "npm:react-dom@^19/server",
+    "tailwindcss": "npm:tailwindcss@^4.1.11"
   }
 }
