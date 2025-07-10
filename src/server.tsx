@@ -1,6 +1,6 @@
 import React from "react";
 import { renderToString } from "react-dom/server";
-import App from "./App.tsx";
+import App from "./app/layout.tsx";
 import { Application } from "jsr:@oak/oak/application";
 import { Router } from "jsr:@oak/oak/router";
 
@@ -11,7 +11,8 @@ router.get("/", (ctx) => {
   const html = `<!DOCTYPE html>
   <html>
   <head>
-     <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/png" href="/static/favicon.svg">
+     <link rel="stylesheet" href="/static/style.css">
   </head>
   
   <body>
@@ -24,10 +25,25 @@ router.get("/", (ctx) => {
 });
 
 // Return CSS
-router.get("/style.css", async (ctx) => {
-  const css = await Deno.readTextFile("./style.css");
-  ctx.response.body = css;
-  ctx.response.type = "text/css";
+router.get("/static/:path+", async (ctx) => {
+  const filePath = ctx.params.path;
+  try {
+    const fullPath = `./static/${filePath}`;
+    const file = await Deno.readFile(fullPath);
+    // Basic content type detection
+    const ext = fullPath.split(".").pop();
+    let type = "application/octet-stream";
+    if (ext === "css") type = "text/css";
+    else if (ext === "js") type = "application/javascript";
+    else if (ext === "png") type = "image/png";
+    else if (ext === "jpg" || ext === "jpeg") type = "image/jpeg";
+    else if (ext === "svg") type = "image/svg+xml";
+    ctx.response.body = file;
+    ctx.response.type = type;
+  } catch {
+    ctx.response.status = 404;
+    ctx.response.body = "Not found";
+  }
 });
 
 const app = new Application();

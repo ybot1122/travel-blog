@@ -3,12 +3,13 @@
     "lib": ["dom", "deno.ns"]
   },
   "tasks": {
-    "start": "deno run --allow-net --allow-read server.tsx",
-    "tailwind:watch": "./bin/tailwindcss.exe -i ./index.css -o ./style.css --watch"
+    "dev": "deno run --allow-net --allow-read --allow-env=NODE_ENV --watch server.tsx",
+    "tailwind:watch": "./bin/tailwindcss-windows-x64.exe -i ./index.css -o ./static/style.css --watch"
   },
   "imports": {
     "@oak/oak": "jsr:@oak/oak@^17.1.5",
     "autoprefixer": "npm:autoprefixer@^10.4.21",
+    "lucide-react": "npm:lucide-react@^0.525.0",
     "postcss": "npm:postcss@^8.5.6",
     "react": "https://esm.sh/react@19",
     "react-dom/client": "npm:react-dom@^19/client",

@@ -15,6 +15,7 @@
     "jsr:@std/path@1": "1.1.1",
     "npm:@types/node@*": "22.15.15",
     "npm:autoprefixer@^10.4.21": "10.4.21_postcss@8.5.6",
+    "npm:lucide-react@0.525": "0.525.0_react@19.1.0",
     "npm:path-to-regexp@^6.3.0": "6.3.0",
     "npm:postcss@^8.5.6": "8.5.6",
     "npm:react-dom@19": "19.1.0_react@19.1.0",
@@ -117,6 +118,12 @@
     "fraction.js@4.3.7": {
       "integrity": "sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew=="
     },
+    "lucide-react@0.525.0_react@19.1.0": {
+      "integrity": "sha512-Tm1txJ2OkymCGkvwoHt33Y2JpN5xucVq1slHcgE6Lk0WjDfjgKWor5CdVER8U6DvcfMwh4M8XxmpTiyzfmfDYQ==",
+      "dependencies": [
+        "react"
+      ]
+    },
     "nanoid@3.3.11": {
       "integrity": "sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==",
       "bin": true
@@ -200,6 +207,7 @@
     "dependencies": [
       "jsr:@oak/oak@^17.1.5",
       "npm:autoprefixer@^10.4.21",
+      "npm:lucide-react@0.525",
       "npm:postcss@^8.5.6",
       "npm:react-dom@19",
       "npm:tailwindcss@^4.1.11"
