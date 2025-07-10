@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "deno.ns"]
+  },
+  "tasks": {
+    "start": "deno run --allow-net --allow-read server.tsx"
+  },
+  "imports": {
+    "react": "https://esm.sh/react@19",
+    "react-dom/client": "npm:react-dom@^19/client",
+    "react-dom/server": "npm:react-dom@^19/server"
+  }
+}
