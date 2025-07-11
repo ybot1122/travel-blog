@@ -3,7 +3,7 @@
     "lib": ["dom", "deno.ns"]
   },
   "tasks": {
-    "dev": "deno run --allow-net --allow-read --allow-env=NODE_ENV --watch server.tsx",
+    "dev": "deno run --allow-net --allow-read --allow-env=NODE_ENV --watch server.tsx & deno task tailwind:watch",
     "tailwind:watch": "./bin/tailwindcss-windows-x64.exe -i ./index.css -o ./static/style.css --watch"
   },
   "imports": {

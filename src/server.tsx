@@ -3,6 +3,9 @@ import { renderToString } from "react-dom/server";
 import App from "./app/layout.tsx";
 import { Application } from "jsr:@oak/oak/application";
 import { Router } from "jsr:@oak/oak/router";
+import HomePage from "./app/page.tsx";
+import PostPage from "./app/posts/[post]/page.tsx";
+import { blogPosts } from "./lib/data.ts";
 
 const router = new Router();
 
@@ -16,7 +19,42 @@ router.get("/", (ctx) => {
   </head>
   
   <body>
-    ${renderToString(<App />)}
+    ${renderToString(
+      <App>
+        <HomePage />
+      </App>
+    )}
+  </body>
+  </html>
+  `;
+  ctx.response.body = html;
+  ctx.response.type = "text/html";
+});
+
+// Return Page for Single Post
+router.get("/posts/:slug", (ctx) => {
+  const slug = ctx.params.slug;
+  const postData = Object.values(blogPosts).find((p) => p.slug === slug);
+
+  if (!postData) {
+    ctx.response.body = "404";
+    ctx.response.status = 404;
+    return;
+  }
+
+  const html = `<!DOCTYPE html>
+  <html>
+  <head>
+    <link rel="icon" type="image/png" href="/static/favicon.svg">
+     <link rel="stylesheet" href="/static/style.css">
+  </head>
+  
+  <body>
+    ${renderToString(
+      <App>
+        <PostPage post={postData} />
+      </App>
+    )}
   </body>
   </html>
   `;

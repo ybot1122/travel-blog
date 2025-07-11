@@ -1,13 +1,12 @@
 import React from "react";
 import Navigation from "../components/Navigation.tsx";
 import Footer from "../components/Footer.tsx";
-import Page from "./page.tsx";
 
-const App = () => {
+const App = ({ children }: { children: React.ReactNode }) => {
   return (
     <main>
       <Navigation />
-      <Page />
+      {children}
       <Footer />
     </main>
   );
