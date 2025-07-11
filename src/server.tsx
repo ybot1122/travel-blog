@@ -5,6 +5,7 @@ import { Application } from "jsr:@oak/oak/application";
 import { Router } from "jsr:@oak/oak/router";
 import HomePage from "./app/page.tsx";
 import PostPage from "./app/posts/[post]/page.tsx";
+import SearchPage from "./app/search/page.tsx";
 import { blogPosts } from "./lib/data.ts";
 
 const router = new Router();
@@ -62,7 +63,29 @@ router.get("/posts/:slug", (ctx) => {
   ctx.response.type = "text/html";
 });
 
-// Return CSS
+// Return search page
+router.get("/search", (ctx) => {
+  const html = `<!DOCTYPE html>
+  <html>
+  <head>
+    <link rel="icon" type="image/png" href="/static/favicon.svg">
+     <link rel="stylesheet" href="/static/style.css">
+  </head>
+  
+  <body>
+    ${renderToString(
+      <App>
+        <SearchPage blogPosts={blogPosts} />
+      </App>
+    )}
+  </body>
+  </html>
+  `;
+  ctx.response.body = html;
+  ctx.response.type = "text/html";
+});
+
+// Return static assets
 router.get("/static/:path+", async (ctx) => {
   const filePath = ctx.params.path;
   try {

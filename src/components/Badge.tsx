@@ -4,10 +4,12 @@ export default function ({
   children,
   variant,
   href,
+  onClick,
 }: {
   children: React.ReactNode;
   variant: "outline" | "secondary" | "primary";
   href?: string;
+  onClick?: () => void;
 }) {
   let className = "";
 
@@ -28,6 +30,10 @@ export default function ({
     <a href={href} className={className}>
       {children}
     </a>
+  ) : onClick ? (
+    <button type="button" onClick={onClick} className={className}>
+      {children}
+    </button>
   ) : (
     <div className={className}>{children}</div>
   );
