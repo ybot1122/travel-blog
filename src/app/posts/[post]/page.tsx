@@ -73,13 +73,11 @@ export default function PostPage({ post }: PostPageProps) {
               muted
             />
           ) : (
-            <div className="relative w-full h-full">
-              <img
-                src={post.coverImage || "/placeholder.svg"}
-                alt={post.title}
-                className="object-cover rounded-2xl"
-              />
-            </div>
+            <img
+              src={post.coverImage || "/placeholder.png"}
+              alt={post.title}
+              className="object-cover rounded-2xl"
+            />
           )}
         </div>
 

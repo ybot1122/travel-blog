@@ -108,7 +108,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Local Tavernas</h2>
       <p>The best meals I had weren't at the cliff-side restaurants with the views, but at small family-run tavernas in the island's interior villages.</p>
       
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen style="margin: 20px 0; border-radius: 8px;"></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VHLq-EbOLRY?si=7WNFDf_KoB3MHaAh" frameborder="0" allowfullscreen"></iframe>
       
       <p>For more travel tips, check out my <a href="/about" style="color: #0ea5e9; text-decoration: underline;">about page</a> where I share more about my travel philosophy.</p>
     `,
@@ -129,14 +129,14 @@ export const blogPosts: BlogPost[] = [
       <h2>The Route</h2>
       <p>My 3-week itinerary took me through:</p>
       
-      <img src="static/placeholder.png?height=400&width=600" alt="Patagonia landscape"  />
+      <img src="/static/placeholder.png" alt="Patagonia landscape"  />
       
       <h2>Essential Gear</h2>
       <p>Packing for Patagonia requires careful consideration of the unpredictable weather. Here's what I couldn't live without:</p>
       
       <p>The weather in Patagonia can change from sunny to stormy in minutes, so being prepared is crucial for a safe and enjoyable trip.</p>
     `,
-    coverImage: "static/placeholder.png?height=400&width=800",
+    coverImage: "/static/placeholder.png",
     tags: [
       "Argentina",
       "Chile",

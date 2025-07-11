@@ -11,13 +11,15 @@ export default function BlogPostCard({ post }: BlogPostCardProps) {
   return (
     <div className="overflow-hidden hover:shadow-xl transition-shadow duration-300 group shadow-2xl px-4">
       <div className="relative overflow-hidden">
-        <img
-          src={post.coverImage || "/placeholder.svg"}
-          alt={post.title}
-          width={800}
-          height={400}
-          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-        />
+        <a href={`/posts/${post.slug}`}>
+          <img
+            src={post.coverImage || "/placeholder.svg"}
+            alt={post.title}
+            width={800}
+            height={400}
+            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </a>
         <div className="absolute top-4 left-4">
           <Badge variant="secondary">
             <MapPin className="w-3 h-3 mr-1 inline-block" />
