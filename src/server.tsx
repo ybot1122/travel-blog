@@ -69,15 +69,21 @@ router.get("/search", (ctx) => {
   <html>
   <head>
     <link rel="icon" type="image/png" href="/static/favicon.svg">
-     <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <script>
+      window.process = {
+        env: {}
+      };
+    </script>
   </head>
   
-  <body>
+  <body id="root">
     ${renderToString(
       <App>
         <SearchPage blogPosts={blogPosts} />
       </App>
     )}
+    <script src="/static/searchbundle.js"></script>
   </body>
   </html>
   `;
