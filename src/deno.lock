@@ -14,6 +14,7 @@
     "jsr:@std/media-types@1": "1.1.0",
     "jsr:@std/path@1": "1.1.1",
     "npm:@types/node@*": "22.15.15",
+    "npm:@types/react-dom@^19.1.6": "19.1.6_@types+react@19.1.8",
     "npm:@types/react@^19.1.8": "19.1.8",
     "npm:autoprefixer@^10.4.21": "10.4.21_postcss@8.5.6",
     "npm:lucide-react@0.525": "0.525.0_react@19.1.0",
@@ -83,6 +84,12 @@
       "integrity": "sha512-R5muMcZob3/Jjchn5LcO8jdKwSCbzqmPB6ruBxMcf9kbxtniZHP327s6C37iOfuw8mbKK3cAQa7sEl7afLrQ8A==",
       "dependencies": [
         "undici-types"
+      ]
+    },
+    "@types/react-dom@19.1.6_@types+react@19.1.8": {
+      "integrity": "sha512-4hOiT/dwO8Ko0gV1m/TJZYk3y0KBnY9vzDh7W+DH17b2HFSOGgdj33dhihPeuy3l0q23+4e+hoXHV6hCC4dCXw==",
+      "dependencies": [
+        "@types/react"
       ]
     },
     "@types/react@19.1.8": {
