@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect, useRef } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { Search, Filter } from "lucide-react";
 import BlogPostCard from "../../components/BlogPostCard.tsx";
 import Badge from "../../components/Badge.tsx";
@@ -94,7 +94,7 @@ export default function SearchPage({ blogPosts }: { blogPosts: BlogPost[] }) {
               placeholder="Search by title, content, or keywords..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-10 h-12 text-lg"
+              className="pl-10 h-12 text-lg border border-gray-900 w-full"
             />
           </div>
 
