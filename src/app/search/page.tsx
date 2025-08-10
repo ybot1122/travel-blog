@@ -113,12 +113,11 @@ export default function SearchPage({ blogPosts }: { blogPosts: BlogPost[] }) {
                 All Locations
               </button>
               {allLocations.map((location) => (
-                <button
-                  type="button"
-                  key={location}
-                  className={
-                    selectedLocation === location ? "default" : "outline"
+                <Badge
+                  variant={
+                    selectedLocation === location ? "primary" : "outline"
                   }
+                  key={location}
                   onClick={() =>
                     setSelectedLocation(
                       location === selectedLocation ? "" : location
@@ -126,7 +125,7 @@ export default function SearchPage({ blogPosts }: { blogPosts: BlogPost[] }) {
                   }
                 >
                   {location}
-                </button>
+                </Badge>
               ))}
             </div>
           </div>

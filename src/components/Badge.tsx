@@ -26,6 +26,10 @@ export default function ({
     className += " cursor-pointer hover:bg-[green] transition-bg duration-300";
   }
 
+  if (href || onClick) {
+    className += " cursor-pointer";
+  }
+
   return href ? (
     <a href={href} className={className}>
       {children}
